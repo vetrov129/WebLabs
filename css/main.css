@@ -1,0 +1,93 @@
+body{
+	background: white;
+	color: black;
+	font-size: 1em;
+	font-weight: 600;
+}
+form{
+	display: flex;
+	flex-direction:  column;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.4em;
+}
+option{
+	color: red;
+}
+.columns_container{
+	margin: 20px 0 ;
+}
+.columns_container:nth-child(1){
+	 background-color: #ffffff;
+	 color: black;
+}
+.columns_container:nth-child(3){
+	 background-color: #FFFFFF;
+	 color: black;
+}
+.row > div{
+  text-align: center;
+}
+
+.row > div > p{
+  margin: 0;
+}
+
+.row > div:nth-child(2){
+  background-color: #FFFFFF;
+  color: black;
+  font-size: 1.4em;
+}
+
+.center{
+  text-align: center;
+}
+.button_send{
+	transition-property: all;
+	background: #FFBA00!important;
+	border:none;
+}
+.button_send:hover{
+	
+	background-color: #ef9231 !important;
+	transition: .4s;
+}
+
+/*МЕДИА ЗАПРОС ДЛЯ ПЕЧАТИ*/
+@media print {
+   #addResp{
+     display: none;
+   }
+
+   p{
+     font-size: 2em;
+     text-align: center;
+     color:black;
+   }
+   h5{
+   	font-size: 5em;
+   	color: black;
+   	
+   }
+
+   tr{
+     border: 2px solid black;
+     box-shadow: none;
+     padding: 10px;font-size: 1.5em;
+    
+     color: black;
+   }
+   
+	.row > div:nth-child(2){
+		background-color: white;
+		border: 1px solid black;
+		box-shadow: none;
+	}
+	
+	/*МЕДИА ЗАПРОС ДЛЯ ПЕЧАТИ*/
+	@page{
+		
+		size: A4;
+		margin: 3cm;
+	}
+ }
